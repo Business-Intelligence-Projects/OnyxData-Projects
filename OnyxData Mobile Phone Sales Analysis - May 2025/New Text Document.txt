@@ -1,0 +1,14 @@
+IF(
+    NOT IsMonthSelected,
+    "<span style='color:#8D99AE'><b>Select Month to See MoM Changes</b></span>",
+    IF(
+        ISBLANK(Change),
+        "<span style='color:#db4437'><b>No data for previous month</b></span>",
+        "<span style='color:" & Color & "'>" &
+            "PM: $" & FORMAT(PreviousMonthRev, "#,##0.00") & " " &
+            "MoM: " & Arrow & " " &
+            "$" & FORMAT(Diff, "#,##0.00") & " | " &
+            Arrow & " " & FORMAT(Change, "0.00") & " %" &
+        "</span>"
+    )
+)
