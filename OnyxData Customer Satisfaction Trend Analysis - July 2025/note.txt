@@ -1,0 +1,19 @@
+#EF233C - Red
+#0077B6 - Neutral Blue
+#38B000 - Green
+
+#0C59DC - Heading Blue
+
+#FE5CA7 - Female Pink
+#01D0FB - Male Blue
+
+Filter:
+
+State
+Satisfaction Factor
+Loyalty Level
+Customer Group
+Gender
+Age Group
+Support Contacted
+Satisfaction Type
