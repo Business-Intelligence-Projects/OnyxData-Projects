@@ -1,0 +1,75 @@
+    --primary-100:#8B5FBF;
+    --primary-200:#61398F;
+    --primary-300:#FFFFFF;
+    --accent-100:#D6C6E1;
+    --accent-200:#9A73B5;
+    --text-100:#4A4A4A;
+    --text-200:#878787;
+    --bg-100:#F5F3F7;
+    --bg-200:#E9E4ED;
+    --bg-300:#FFFFFF;
+
+
+Page 1: Complaints Overview
+
+Purpose: Give a high-level picture of consumer complaints across states, products, and time.
+Contents:
+
+KPI Cards:
+
+Total Complaints
+
+% Timely Responses
+
+Average Response Time (days)
+
+Visuals:
+
+Map (State-wise complaint volume using State_Latitude & State_Longitude)
+
+Bar Chart: Complaints by Product (Mortgage, Credit Card, etc.)
+
+Line Chart: Complaints Trend over Time (Date submitted or Date received)
+
+Pie/Donut: Complaint outcomes (Closed with explanation, Closed with monetary relief, etc.)
+
+🏢 Page 2: Company Performance
+
+Purpose: Compare companies based on complaints, response quality, and market share.
+Contents:
+
+KPI Cards:
+
+Total Companies
+
+Avg. Timely Response Rate
+
+Highest Complaint Count (Company Name)
+
+Visuals:
+
+Bar/Column: Complaints per Company (sortable by Complaint Count or Market Share %)
+
+Scatter Plot: Market Share % (X) vs. Complaints per 1% Share (Y) (bubble size = Complaint Count, color = Reputation Score)
+
+Matrix: Company-wise stats → Complaint Count, Timely Response %, Avg Response Days, Reputation Score
+
+KPI Indicator: “Best Performer” (highest reputation & high timely response) vs “Risky Performer” (low timely response, high complaints per share)
+
+🔎 Page 3: Complaint Deep Dive & Trends
+
+Purpose: Drill into details of complaints by issue, region, and timeline for root-cause analysis.
+Contents:
+
+Filters/Slicers: State, Product, Sub-product, Issue, Company
+
+Visuals:
+
+Treemap: Complaints by Issue & Sub-Issue
+
+Heatmap/Matrix: Census Region × Product → Complaint Count
+
+Line Chart: Avg Response Time Trend over Time
+
+Table: Detailed complaints (Complaint ID, Date, Product, Issue, Company Response, Timely Y/N) for drill-through
+      
