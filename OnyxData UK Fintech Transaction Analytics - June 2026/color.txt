@@ -1,0 +1,29 @@
+| Element         | Color   |
+| --------------- | ------- |
+| Background      | #0F172A |
+| Card Background | #1E293B |
+| Border          | #334155 |
+| Primary KPI     | #F8FAFC |
+| Positive Growth | #10B981 |
+| Negative Growth | #EF4444 |
+| Accent Blue     | #38BDF8 |
+| Accent Purple   | #8B5CF6 |
+| Accent Gold     | #F59E0B |
+| Text Secondary  | #CBD5E1 |
+
+IF(
+    ISBLANK(MoMPercent) || PreviousMonthValue == 0
+        || (MoMPercent = 0 && ISBLANK(PreviousMonthValue)),
+    "",
+    Arrow & " " &
+    FORMAT(
+        ABS(MoMPercent),
+        "0.0%"
+    )
+)
+
+IF(
+    ISBLANK(CurrentMonthValue) || CurrentMonthValue == 0,
+    "No Data",
+    FORMAT(CurrentMonthValue,"£#,##0")
+)
